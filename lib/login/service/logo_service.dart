@@ -8,7 +8,7 @@ import 'package:usabai2/login/models/logo_model.dart';
 
 Future<Logo> fetchLogo() async {
   final response = await http
-      .get(Uri.parse('https://www.u-sabai.com/api/app/logo.php'));
+      .get(Uri.parse('---------link API--------'));
 
   if (response.statusCode == 200) {
     return Logo.fromJson(jsonDecode(response.body));
